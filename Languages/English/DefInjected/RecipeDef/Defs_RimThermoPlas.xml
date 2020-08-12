@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- RimThermoPlas Foam Recipe(s) -->
+
+  <RCP_RimThermoPlas_Foam.label>Mould RimThermoPlas Foam</RCP_RimThermoPlas_Foam.label>
+  <RCP_RimThermoPlas_Foam.description>Mould 5 RimThermoPlas Foam.</RCP_RimThermoPlas_Foam.description>
+  <RCP_RimThermoPlas_Foam.jobString>Moulding a RimThermoPlas Item.</RCP_RimThermoPlas_Foam.jobString>
+
+  <RCP_Bulk_RimThermoPlas_Foam.label>Mould RimThermoPlas Foam in bulk</RCP_Bulk_RimThermoPlas_Foam.label>
+  <RCP_Bulk_RimThermoPlas_Foam.description>Mould 20 RimThermoPlas Foam.</RCP_Bulk_RimThermoPlas_Foam.description>
+  <RCP_Bulk_RimThermoPlas_Foam.jobString>Moulding a RimThermoPlas Item.</RCP_Bulk_RimThermoPlas_Foam.jobString>
+
+
+</LanguageData>

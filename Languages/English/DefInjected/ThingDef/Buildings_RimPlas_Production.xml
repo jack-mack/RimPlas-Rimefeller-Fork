@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Injection Mould Machine -->
+
+  <RimPlas_InjMldMachine.label>RimPlas Injection Moulder</RimPlas_InjMldMachine.label>
+  <RimPlas_InjMldMachine.description>Efficiently moulds RimPlas furniture and items from resources.</RimPlas_InjMldMachine.description>
+
+
+  <!-- Advanced Injection Moulding Machine -->
+
+  <RimPlas_AdvInjMld.label>RimPlas Advanced Injection Moulder</RimPlas_AdvInjMld.label>
+  <RimPlas_AdvInjMld.description>Moulds complex materials.</RimPlas_AdvInjMld.description>
+
+
+  <!-- Mech Breaker -->
+
+  <RimPlas_MechBreaker.label>Mech Breaker</RimPlas_MechBreaker.label>
+  <RimPlas_MechBreaker.description>Breaks mechanoids down into their respective parts and extracts mechanites.</RimPlas_MechBreaker.description>
+
+
+</LanguageData>

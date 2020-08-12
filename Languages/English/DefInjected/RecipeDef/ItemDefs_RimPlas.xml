@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeRimPlas.label>Make RimPlas</MakeRimPlas.label>
+  <MakeRimPlas.description>Craft 25 RimPlas.</MakeRimPlas.description>
+  <MakeRimPlas.jobString>Making RimPlas.</MakeRimPlas.jobString>
+
+  <MakeBulkRimPlas.label>Make RimPlas in Bulk</MakeBulkRimPlas.label>
+  <MakeBulkRimPlas.description>Craft 100 RimPlas.</MakeBulkRimPlas.description>
+  <MakeBulkRimPlas.jobString>Making RimPlas.</MakeBulkRimPlas.jobString>
+
+
+</LanguageData>

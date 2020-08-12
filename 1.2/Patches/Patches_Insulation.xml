@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Insulation (Continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="INSDoor_Base">
+              <defName>RTPDoorSimple</defName>
+              <label>RimThermoPlas Door</label>
+              <description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+              <statBases>
+                <WorkToBuild>1000</WorkToBuild>
+                <MaxHitPoints>100</MaxHitPoints>
+                <Flammability>1.0</Flammability>
+              </statBases>
+              <blockWind>true</blockWind>
+              <graphicData>
+                <texPath>Things/Building/Door/RTPThermalDoor/RTPThermalDoorSimple_Mover</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <damageData>
+                  <enabled>false</enabled>
+                </damageData>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/RTPThermalDoor/RTPThermalDoorSimple_MenuIcon</uiIconPath>
+              <building>
+                <blueprintGraphicData>
+                  <texPath>Things/Building/Door/RTPThermalDoor/RTPThermalDoor_Blueprint</texPath>
+                </blueprintGraphicData>
+              </building>
+              <costStuffCount>20</costStuffCount>
+              <costList>
+                <RimThermoPlas_Foam>10</RimThermoPlas_Foam>
+              </costList>
+              <designationHotKey>Misc1</designationHotKey>
+              <techLevel>Spacer</techLevel>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.1</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                  <HitPointsNeed>0.25</HitPointsNeed>
+                </li>
+              </comps>
+              <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+              <researchPrerequisites>
+                <li>InsulationPolymers</li>
+                <li>RimThermoPlas</li>
+              </researchPrerequisites>
+              <designationCategory>RimPlas_FurnDesig</designationCategory>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="DoorBase">
+              <defName>RTPAutodoor</defName>
+              <label>RimThermoPlas Autodoor</label>
+              <description>Divides rooms. Powered operation allows people to move through the door without slowing down. This door has additional insulation properties to reduce heat transfer.</description>
+              <statBases>
+                <WorkToBuild>1000</WorkToBuild>
+                <MaxHitPoints>100</MaxHitPoints>
+                <Flammability>0.6</Flammability>
+              </statBases>
+              <blockWind>true</blockWind>
+              <graphicData>
+                <texPath>Things/Building/Door/RTPThermalDoor/RTPThermalDoor_Mover</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <damageData>
+                  <enabled>false</enabled>
+                </damageData>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/RTPThermalDoor/RTPThermalDoor_MenuIcon</uiIconPath>
+              <building>
+                <blueprintGraphicData>
+                  <texPath>Things/Building/Door/RTPThermalDoor/RTPThermalDoor_Blueprint</texPath>
+                </blueprintGraphicData>
+              </building>
+              <costList>
+                <Steel>30</Steel>
+                <RimThermoPlas_Foam>10</RimThermoPlas_Foam>
+                <ComponentIndustrial>2</ComponentIndustrial>
+              </costList>
+              <costStuffCount>25</costStuffCount>
+              <comps>
+                <li Class="CompProperties_Power">
+                  <compClass>CompPowerTrader</compClass>
+                  <basePowerConsumption>50</basePowerConsumption>
+                </li>
+                <li Class="CompProperties_Breakdownable" />
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.1</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                  <HitPointsNeed>0.25</HitPointsNeed>
+                </li>
+              </comps>
+              <designationHotKey>Misc2</designationHotKey>
+              <researchPrerequisites>
+                <li>Autodoors</li>
+                <li>RimThermoPlas</li>
+                <li>InsulationPolymers</li>
+              </researchPrerequisites>
+              <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+              <designationCategory>RimPlas_FurnDesig</designationCategory>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="BuildingBase">
+              <defName>RTPInsulatedWall</defName>
+              <label>RTP Insulated wall</label>
+              <description>An impassable wall, capable of holding up a roof. This wall is insulated with RimThermoPlas.</description>
+              <thingClass>Building</thingClass>
+              <category>Building</category>
+              <graphicData>
+                <texPath>Things/Building/Linked/RTPInsulatedWall</texPath>
+                <graphicClass>Graphic_Appearances</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <linkType>CornerFiller</linkType>
+                <linkFlags>
+                  <li>Wall</li>
+                  <li>Rock</li>
+                </linkFlags>
+                <damageData>
+                  <cornerTL>Damage/Corner</cornerTL>
+                  <cornerTR>Damage/Corner</cornerTR>
+                  <cornerBL>Damage/Corner</cornerBL>
+                  <cornerBR>Damage/Corner</cornerBR>
+                  <edgeTop>Damage/Edge</edgeTop>
+                  <edgeBot>Damage/Edge</edgeBot>
+                  <edgeLeft>Damage/Edge</edgeLeft>
+                  <edgeRight>Damage/Edge</edgeRight>
+                </damageData>
+              </graphicData>
+              <uiIconPath>Things/Building/Linked/RTPInsulatedWall/RTPInsulatedWallSmooth_MenuIcon</uiIconPath>
+              <statBases>
+                <MaxHitPoints>250</MaxHitPoints>
+                <WorkToBuild>180</WorkToBuild>
+                <Flammability>1.0</Flammability>
+              </statBases>
+              <costStuffCount>3</costStuffCount>
+              <costList>
+                <RimThermoPlas_Foam>5</RimThermoPlas_Foam>
+              </costList>
+              <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+              <altitudeLayer>Building</altitudeLayer>
+              <passability>Impassable</passability>
+              <blockWind>true</blockWind>
+              <castEdgeShadows>true</castEdgeShadows>
+              <fillPercent>1</fillPercent>
+              <coversFloor>true</coversFloor>
+              <placingDraggableDimensions>1</placingDraggableDimensions>
+              <tickerType>Never</tickerType>
+              <rotatable>false</rotatable>
+              <selectable>true</selectable>
+              <neverMultiSelect>true</neverMultiSelect>
+              <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+              <holdsRoof>true</holdsRoof>
+              <designationCategory>RimPlas_FurnDesig</designationCategory>
+              <staticSunShadowHeight>1.0</staticSunShadowHeight>
+              <blockLight>true</blockLight>
+              <canOverlapZones>false</canOverlapZones>
+              <stuffCategories>
+                <li>Metallic</li>
+                <li>Woody</li>
+                <li>Stony</li>
+              </stuffCategories>
+              <building>
+                <isInert>true</isInert>
+                <ai_chillDestination>false</ai_chillDestination>
+                <blueprintGraphicData>
+                  <texPath>Things/Building/Linked/RTPInsulatedWall/RTPInsulatedWall_Blueprint_Atlas</texPath>
+                </blueprintGraphicData>
+              </building>
+              <!--
+    						<damageMultipliers Inherit="false">
+      						<li>
+        						<damageDef>Bomb</damageDef>
+        						<multiplier>2.25</multiplier>
+      						</li>
+    						</damageMultipliers>
+							-->
+              <designationHotKey>Misc3</designationHotKey>
+              <researchPrerequisites>
+                <li>RimThermoPlas</li>
+                <li>InsulationPolymers</li>
+              </researchPrerequisites>
+              <techLevel>Spacer</techLevel>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.1</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef Name="RTPInsulatorBuildingBase" Abstract="True">
+              <category>Building</category>
+              <thingClass>Building</thingClass>
+              <altitudeLayer>Building</altitudeLayer>
+              <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+              <selectable>true</selectable>
+              <drawerType>MapMeshAndRealTime</drawerType>
+              <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+              <passability>Impassable</passability>
+              <blockWind>true</blockWind>
+              <castEdgeShadows>true</castEdgeShadows>
+              <fillPercent>1</fillPercent>
+              <constructEffect>ConstructDirt</constructEffect>
+              <repairEffect>Repair</repairEffect>
+              <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+              <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+              <statBases>
+                <SellPriceFactor>0.70</SellPriceFactor>
+              </statBases>
+              <techLevel>Spacer</techLevel>
+              <designationCategory>RimPlas_FurnDesig</designationCategory>
+              <thingCategories>
+                <li>BuildingsRimPlas</li>
+              </thingCategories>
+              <researchPrerequisites>
+                <li>RimThermoPlas</li>
+              </researchPrerequisites>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="RTPInsulatorBuildingBase">
+              <defName>RimThermoPlas_Insulator</defName>
+              <label>RimThermoPlas Insulator</label>
+              <description>An effective insulation layer</description>
+              <graphicData>
+                <texPath>Things/Building/Temperature/RimThermoPlas_Insulator</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shadowData>
+                  <volume>(0.5,0.3,0.7)</volume>
+                  <offset>(0,0,-0.15)</offset>
+                </shadowData>
+                <damageData>
+                  <rect>(0.234375,0,0.515625,0.984375)</rect>
+                  <cornerTL>Damage/Corner</cornerTL>
+                  <cornerTR>Damage/Corner</cornerTR>
+                  <cornerBL>Damage/Corner</cornerBL>
+                  <cornerBR>Damage/Corner</cornerBR>
+                </damageData>
+              </graphicData>
+              <minifiedDef>MinifiedThing</minifiedDef>
+              <rotatable>false</rotatable>
+              <statBases>
+                <WorkToBuild>500</WorkToBuild>
+                <MaxHitPoints>100</MaxHitPoints>
+                <Mass>10</Mass>
+                <Flammability>0.7</Flammability>
+                <MarketValue>67.5</MarketValue>
+              </statBases>
+              <tickerType>Normal</tickerType>
+              <costList>
+                <RimThermoPlas_Foam>10</RimThermoPlas_Foam>
+                <RimPlas>5</RimPlas>
+              </costList>
+              <comps>
+                <li Class="CompProperties_Forbiddable" />
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.05</HeatTransferFactor>
+                  <InsulationStuff>false</InsulationStuff>
+                  <HitPointsNeed>0.25</HitPointsNeed>
+                </li>
+              </comps>
+              <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <RecipeDef>
+              <defName>RCP_RimThermoPlas_Insulator</defName>
+              <label>Mould RimThermoPlas Insulator</label>
+              <description>Mould RimThermoPlas Insulator.</description>
+              <workAmount>250</workAmount>
+              <jobString>Moulding a RimThermoPlas Item.</jobString>
+              <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+              <effectWorking>Cremate</effectWorking>
+              <soundWorking>Recipe_Cremate</soundWorking>
+              <targetCountAdjustment>1</targetCountAdjustment>
+              <workSkill>Crafting</workSkill>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Synthbase</li>
+                  <li>RimPoly</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <recipeUsers>
+                <li>RimPlas_InjMldMachine</li>
+              </recipeUsers>
+              <researchPrerequisite>RimThermoPlas</researchPrerequisite>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Synthbase</li>
+                    </thingDefs>
+                  </filter>
+                  <count>10</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>RimPoly</li>
+                    </thingDefs>
+                  </filter>
+                  <count>50</count>
+                </li>
+              </ingredients>
+              <products>
+                <RimThermoPlas_Insulator>1</RimThermoPlas_Insulator>
+              </products>
+              <skillRequirements>
+                <Crafting>6</Crafting>
+              </skillRequirements>
+            </RecipeDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="RTPInsulatorBuildingBase">
+              <defName>RimThermoPlas_Convector</defName>
+              <label>RimThermoPlas Convector</label>
+              <description>An effective insulation layer that includes the RTP thermal reaction to also act as a heater.</description>
+              <graphicData>
+                <texPath>Things/Building/Temperature/RimThermoPlas_Convector</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shadowData>
+                  <volume>(0.5,0.3,0.7)</volume>
+                  <offset>(0,0,-0.15)</offset>
+                </shadowData>
+                <damageData>
+                  <rect>(0.234375,0,0.515625,0.984375)</rect>
+                  <cornerTL>Damage/Corner</cornerTL>
+                  <cornerTR>Damage/Corner</cornerTR>
+                  <cornerBL>Damage/Corner</cornerBL>
+                  <cornerBR>Damage/Corner</cornerBR>
+                </damageData>
+              </graphicData>
+              <minifiedDef>MinifiedThing</minifiedDef>
+              <rotatable>false</rotatable>
+              <statBases>
+                <WorkToBuild>500</WorkToBuild>
+                <MaxHitPoints>100</MaxHitPoints>
+                <Mass>10</Mass>
+                <Flammability>0.7</Flammability>
+                <MarketValue>67.5</MarketValue>
+              </statBases>
+              <tickerType>Normal</tickerType>
+              <costList>
+                <RimThermoPlas_Foam>10</RimThermoPlas_Foam>
+                <RimPlas>5</RimPlas>
+              </costList>
+              <placeWorkers>
+                <li>PlaceWorker_Heater</li>
+              </placeWorkers>
+              <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+              <comps>
+                <li Class="CompProperties_Forbiddable" />
+                <li Class="CompProperties_Refuelable">
+                  <fuelConsumptionRate>0.33</fuelConsumptionRate>
+                  <fuelCapacity>10.0</fuelCapacity>
+                  <fuelFilter>
+                    <thingDefs>
+                      <li>Chemfuel</li>
+                    </thingDefs>
+                  </fuelFilter>
+                  <initialFuelPercent>0</initialFuelPercent>
+                </li>
+                <li Class="CompProperties_HeatPusher">
+                  <compClass>CompHeatPusherPowered</compClass>
+                  <heatPerSecond>5</heatPerSecond>
+                  <heatPushMaxTemperature>23</heatPushMaxTemperature>
+                </li>
+                <li Class="CompProperties_Breakdownable" />
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.15</HeatTransferFactor>
+                  <InsulationStuff>false</InsulationStuff>
+                  <HitPointsNeed>0</HitPointsNeed>
+                </li>
+              </comps>
+              <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <RecipeDef>
+              <defName>RCP_RimThermoPlas_Convector</defName>
+              <label>Mould RimThermoPlas Convector</label>
+              <description>Mould RimThermoPlas Convector.</description>
+              <workAmount>250</workAmount>
+              <jobString>Moulding a RimThermoPlas Item.</jobString>
+              <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+              <effectWorking>Cremate</effectWorking>
+              <soundWorking>Recipe_Cremate</soundWorking>
+              <targetCountAdjustment>1</targetCountAdjustment>
+              <workSkill>Crafting</workSkill>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Synthbase</li>
+                  <li>RimPoly</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <recipeUsers>
+                <li>RimPlas_InjMldMachine</li>
+              </recipeUsers>
+              <researchPrerequisite>RimThermoPlas</researchPrerequisite>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Synthbase</li>
+                    </thingDefs>
+                  </filter>
+                  <count>10</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>RimPoly</li>
+                    </thingDefs>
+                  </filter>
+                  <count>55</count>
+                </li>
+              </ingredients>
+              <products>
+                <RimThermoPlas_Convector>1</RimThermoPlas_Convector>
+              </products>
+              <skillRequirements>
+                <Crafting>7</Crafting>
+              </skillRequirements>
+            </RecipeDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

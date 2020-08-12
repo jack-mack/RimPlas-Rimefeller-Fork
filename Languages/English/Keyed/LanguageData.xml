@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Settings -->
+  <RimPlas.Name>RimPlas</RimPlas.Name>
+  <RimPlas.ResPct>Relative cost for research %:</RimPlas.ResPct>
+  <RimPlas.ResTip>Note these changes will only take effect when RimWorld is restarted.</RimPlas.ResTip>
+  <RimPlas.ResWarn>(Warning: increasing the % will mean research will become incomplete using the previous value.)</RimPlas.ResWarn>
+  <RimPlas.GVentMin>Graphene Vent fixed Min temperature (Celcius) [Default 10]:</RimPlas.GVentMin>
+  <RimPlas.GVentMax>Graphene Vent fixed max temperature (Celcius) [Default 30]:</RimPlas.GVentMax>
+  <RimPlas.AllowPainCtrlHB>Allow High-tech hospital bed to control pain:</RimPlas.AllowPainCtrlHB>
+  <RimPlas.AllowRecCtrlHB>Allow High-tech hospital bed to provide recreation:</RimPlas.AllowRecCtrlHB>
+  <RimPlas.AllowMentalCtrlHB>Allow High-tech hospital bed to control mental state:</RimPlas.AllowMentalCtrlHB>
+  <!-- Content -->
+  <RimPlas.Fixed>Fixed Temps</RimPlas.Fixed>
+  <RimPlas.FixedDesc>On: Fixed ({0}C - {1}C Temp Range)</RimPlas.FixedDesc>
+  <RimPlas.Boost>Boost</RimPlas.Boost>
+  <RimPlas.BoostDesc>Boost the power and regulation.</RimPlas.BoostDesc>
+  <RimPlas.RPElectroliserOutput>Effective power output: {0}</RimPlas.RPElectroliserOutput>
+  <!-- RPThingMaker -->
+  <RPThingMaker.ErrorRCP>Error with RPThingMaker: recipe value item: {0} ticks: {1} min: {2} max: {3}</RPThingMaker.ErrorRCP>
+  <RPThingMaker.ErrorRes>Error with RPThingMaker: recipe item {0} not researched.</RPThingMaker.ErrorRes>
+  <RPThingMaker.ThingSelectDesc>Select Thing to produce.</RPThingMaker.ThingSelectDesc>
+  <RPThingMaker.ThingSelect>Select Thing</RPThingMaker.ThingSelect>
+  <RPThingMaker.Production>Production</RPThingMaker.Production>
+  <RPThingMaker.ProductionDesc>Toggle Production</RPThingMaker.ProductionDesc>
+  <RPThingMaker.ProdLabelRange>(Minimum: {0}, Maximum: {1})</RPThingMaker.ProdLabelRange>
+  <RPThingMaker.ProdLabelERR>(ERR: No Valid Recipe)</RPThingMaker.ProdLabelERR>
+  <RPThingMaker.ProdNoThing>(No Thing Selected)</RPThingMaker.ProdNoThing>
+  <RPThingMaker.ProdStopped>(Stopped)</RPThingMaker.ProdStopped>
+  <RPThingMaker.StockLabel>(Limit:{0}, ({1}%)</RPThingMaker.StockLabel>
+  <RPThingMaker.StockLabelNL>( No Limit )</RPThingMaker.StockLabelNL>
+  <RPThingMaker.SelectStockLimit>Select stock limit</RPThingMaker.SelectStockLimit>
+  <RPThingMaker.StockNoLimit>No Limit</RPThingMaker.StockNoLimit>
+  <RPThingMaker.SelNoThing>No Thing</RPThingMaker.SelNoThing>
+
+</LanguageData>

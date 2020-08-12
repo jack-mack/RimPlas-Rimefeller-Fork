@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RimPlas.label>RimPlas</RimPlas.label>
+  <RimPlas.description>Grants the ability to use new materials.</RimPlas.description>
+
+  <RimPlas_InjMld.label>Injection Moulding</RimPlas_InjMld.label>
+  <RimPlas_InjMld.description>Grants the ability to make furniture using injection moulding.</RimPlas_InjMld.description>
+
+  <RimPlas_AdvInjMld.label>Advanced Injection Moulding</RimPlas_AdvInjMld.label>
+  <RimPlas_AdvInjMld.description>Grants the ability to make complex materials with injection moulding.</RimPlas_AdvInjMld.description>
+
+  <RimPlas_Components.label>Construct RimPlas Components</RimPlas_Components.label>
+  <RimPlas_Components.description>Grants the ability to make Rimplas versions of components.</RimPlas_Components.description>
+
+  <RimPlas_AdvComponents.label>Construct RimPlas Advanced Components</RimPlas_AdvComponents.label>
+  <RimPlas_AdvComponents.description>Grants the ability to make Rimplas versions of advanced components.</RimPlas_AdvComponents.description>
+
+  <RimPlas_MultiAnalyzer.label>Construct RimPlas MultiAnalyzer</RimPlas_MultiAnalyzer.label>
+  <RimPlas_MultiAnalyzer.description>Grants the ability to make a Rimplas version of the multianalyzer.</RimPlas_MultiAnalyzer.description>
+
+
+</LanguageData>

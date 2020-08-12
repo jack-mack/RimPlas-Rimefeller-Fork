@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MakeRimoprene.label>Make Rimoprene</MakeRimoprene.label>
+  <MakeRimoprene.description>Make 25 Rimoprene.</MakeRimoprene.description>
+  <MakeRimoprene.jobString>Making Rimoprene.</MakeRimoprene.jobString>
+
+  <MakeBulkRimoprene.label>Make Rimoprene in bulk</MakeBulkRimoprene.label>
+  <MakeBulkRimoprene.description>Make 75 Rimoprene.</MakeBulkRimoprene.description>
+  <MakeBulkRimoprene.jobString>Making Rimoprene.</MakeBulkRimoprene.jobString>
+
+
+</LanguageData>

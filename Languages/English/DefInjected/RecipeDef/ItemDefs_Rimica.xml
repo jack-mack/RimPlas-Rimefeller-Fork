@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Rimica -->
+
+  <MakeRimicaBlocks.label>Make Rimica Blocks</MakeRimicaBlocks.label>
+  <MakeRimicaBlocks.description>Make 25 Rimica blocks.</MakeRimicaBlocks.description>
+  <MakeRimicaBlocks.jobString>Making Rimica blocks.</MakeRimicaBlocks.jobString>
+
+
+  <!-- Fortified Rimica -->
+
+  <MakeFortRimicaBlocks.label>Make Fortrimica Blocks</MakeFortRimicaBlocks.label>
+  <MakeFortRimicaBlocks.description>Make 25 Fortrimica blocks.</MakeFortRimicaBlocks.description>
+  <MakeFortRimicaBlocks.jobString>Making Fortrimica blocks.</MakeFortRimicaBlocks.jobString>
+
+
+</LanguageData>

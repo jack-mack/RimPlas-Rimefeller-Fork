@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RimPlas_CarboSynth.label>Carbon synthetics</RimPlas_CarboSynth.label>
+  <RimPlas_CarboSynth.description>Grants the ability to use new materials.</RimPlas_CarboSynth.description>
+
+  <RimPlas_Graphene.label>Graphene</RimPlas_Graphene.label>
+  <RimPlas_Graphene.description>Grants the ability to use new materials.</RimPlas_Graphene.description>
+
+  <RimPlas_CarbonComposites.label>Carbon Composite Materials</RimPlas_CarbonComposites.label>
+  <RimPlas_CarbonComposites.description>Grants the ability to use new materials</RimPlas_CarbonComposites.description>
+
+  <RPGrapheneElectroliser.label>Graphene Electroliser Generator</RPGrapheneElectroliser.label>
+  <RPGrapheneElectroliser.description>Grants the ability to construct the graphene electroliser generator.</RPGrapheneElectroliser.description>
+
+  <RPSecurityDoors.label>Graphene Security Doors</RPSecurityDoors.label>
+  <RPSecurityDoors.description>Grants the ability to construct intelligent security doors.</RPSecurityDoors.description>
+
+  <RimPlas_AdvIntelMats.label>Advanced Intelligent Materials</RimPlas_AdvIntelMats.label>
+  <RimPlas_AdvIntelMats.description>Grants the ability to make complex materials with advanced injection moulding.</RimPlas_AdvIntelMats.description>
+
+
+</LanguageData>

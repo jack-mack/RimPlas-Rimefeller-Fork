@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Semi synthetics -->
+
+  <RimPlas_SemiSynth.label>Semi-synthetics</RimPlas_SemiSynth.label>
+  <RimPlas_SemiSynth.description>Grants the ability to use new materials.</RimPlas_SemiSynth.description>
+
+
+  <!-- Synthetics -->
+
+  <RimPlas_Synth.label>Synthetic Materials</RimPlas_Synth.label>
+  <RimPlas_Synth.description>Grants the ability to make synthetic textiles and leads to further synthetic research.</RimPlas_Synth.description>
+
+  <RimPlas_Synth_Plasteel.label>Synthesise Plasteel</RimPlas_Synth_Plasteel.label>
+  <RimPlas_Synth_Plasteel.description>Grants the ability to make Plasteel.</RimPlas_Synth_Plasteel.description>
+
+  <RimThermoPlas.label>RimThermoPlas</RimThermoPlas.label>
+  <RimThermoPlas.description>Grants the ability to use new materials.</RimThermoPlas.description>
+
+  <Rimoprene.label>Rimoprene</Rimoprene.label>
+  <Rimoprene.description>Grants the ability to use a new synthetic leather-like textile.</Rimoprene.description>
+
+
+  <!-- Rimica Research -->
+
+  <Rimica.label>Rimica Composite</Rimica.label>
+  <Rimica.description>Grants the ability to make Rimica.</Rimica.description>
+
+  <FortRimica.label>Fortrimica Composite</FortRimica.label>
+  <FortRimica.description>Grants the ability to make fortified Rimica.</FortRimica.description>
+
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RP_CeilingLight.label>ceiling light</RP_CeilingLight.label>
+  <RP_CeilingLight.description>A ceiling light.</RP_CeilingLight.description>
+
+  <RP_GrapheneCeilingLight.label>graphene ceiling light</RP_GrapheneCeilingLight.label>
+  <RP_GrapheneCeilingLight.description>A ceiling light made using graphene. Much more effective and efficient.</RP_GrapheneCeilingLight.description>
+
+
+</LanguageData>

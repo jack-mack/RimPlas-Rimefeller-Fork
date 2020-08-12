@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ====== Compatability Patch ==================== -->
+  <!-- Asphalt -->
+  <!-- Add ingredients -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Industrialisation</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="MakeAsphalt"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>Ind_Concrete</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="MakeAsphalt"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>Ind_Concrete</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="MakeAsphalt"]/recipeUsers</xpath>
+          <value>
+            <li>Ind_ConcreteMixer</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- Industrialisation CarboPlasteel -->
+  <!-- Add recipes to Electric Arc Smelter -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Industrialisation</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="RCP_CarboPlasteel"]/recipeUsers</xpath>
+          <value>
+            <li>Ind_ElectricArcFurnace</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="RCP_BulkCarboPlasteel"]/recipeUsers</xpath>
+          <value>
+            <li>Ind_ElectricArcFurnace</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

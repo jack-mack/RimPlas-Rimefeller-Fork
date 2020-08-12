@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAsphalt.label>Make Asphalt</MakeAsphalt.label>
+  <MakeAsphalt.description>Make 50 Asphalt</MakeAsphalt.description>
+  <MakeAsphalt.jobString>Making Asphalt</MakeAsphalt.jobString>
+
+
+</LanguageData>

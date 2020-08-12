@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Camouflage and Stealth</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="RPGrapheneNanoSuit"]/comps</xpath>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationTest">
+                <success>Invert</success>
+                <xpath>/Defs/ThingDef[defName="RPGrapheneNanoSuit"]/comps/li[@Class="CompCamo.CompProperties_GearCamo"]</xpath>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="RPGrapheneNanoSuit"]/comps</xpath>
+                <value>
+                  <li Class="CompCamo.CompProperties_GearCamo">
+                    <ArcticCamoEff>0.75</ArcticCamoEff>
+                    <DesertCamoEff>0.50</DesertCamoEff>
+                    <JungleCamoEff>0.40</JungleCamoEff>
+                    <StoneCamoEff>0.60</StoneCamoEff>
+                    <WoodlandCamoEff>0.40</WoodlandCamoEff>
+                    <UrbanCamoEff>0.85</UrbanCamoEff>
+                  </li>
+                </value>
+              </li>
+            </operations>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="RPGrapheneNanoSuit"]</xpath>
+            <value>
+              <comps>
+                <li Class="CompCamo.CompProperties_GearCamo">
+                  <ArcticCamoEff>0.75</ArcticCamoEff>
+                  <DesertCamoEff>0.50</DesertCamoEff>
+                  <JungleCamoEff>0.40</JungleCamoEff>
+                  <StoneCamoEff>0.60</StoneCamoEff>
+                  <WoodlandCamoEff>0.40</WoodlandCamoEff>
+                  <UrbanCamoEff>0.85</UrbanCamoEff>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Camouflage and Stealth</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="RPGrapheneShieldNanoSuit"]/comps</xpath>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationTest">
+                <success>Invert</success>
+                <xpath>/Defs/ThingDef[defName="RPGrapheneShieldNanoSuit"]/comps/li[@Class="CompCamo.CompProperties_GearCamo"]</xpath>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="RPGrapheneShieldNanoSuit"]/comps</xpath>
+                <value>
+                  <li Class="CompCamo.CompProperties_GearCamo">
+                    <ArcticCamoEff>0.40</ArcticCamoEff>
+                    <DesertCamoEff>0.50</DesertCamoEff>
+                    <JungleCamoEff>0.80</JungleCamoEff>
+                    <StoneCamoEff>0.50</StoneCamoEff>
+                    <WoodlandCamoEff>0.80</WoodlandCamoEff>
+                    <UrbanCamoEff>0.70</UrbanCamoEff>
+                  </li>
+                </value>
+              </li>
+            </operations>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="RPGrapheneShieldNanoSuit"]</xpath>
+            <value>
+              <comps>
+                <li Class="CompCamo.CompProperties_GearCamo">
+                  <ArcticCamoEff>0.40</ArcticCamoEff>
+                  <DesertCamoEff>0.50</DesertCamoEff>
+                  <JungleCamoEff>0.80</JungleCamoEff>
+                  <StoneCamoEff>0.50</StoneCamoEff>
+                  <WoodlandCamoEff>0.80</WoodlandCamoEff>
+                  <UrbanCamoEff>0.70</UrbanCamoEff>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

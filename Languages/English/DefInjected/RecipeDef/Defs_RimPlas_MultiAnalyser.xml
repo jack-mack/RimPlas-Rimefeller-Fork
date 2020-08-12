@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Injection Moulding of RimPlas MAPart -->
+
+  <RimPlasMouldRPMAPart.label>Mould RimPlas multianalyzer part</RimPlasMouldRPMAPart.label>
+  <RimPlasMouldRPMAPart.description>Mould RimPlas multianalyzer part.</RimPlasMouldRPMAPart.description>
+  <RimPlasMouldRPMAPart.jobString>Moulding RimPlas multianalyzer part.</RimPlasMouldRPMAPart.jobString>
+
+
+  <!-- Combining RP MAParts and materials at machining table -->
+
+  <RCP_RPMultiAnalyzer.label>Make RimPlas multianalyzer</RCP_RPMultiAnalyzer.label>
+  <RCP_RPMultiAnalyzer.description>Make a RimPlas multianalyser.</RCP_RPMultiAnalyzer.description>
+  <RCP_RPMultiAnalyzer.jobString>Making a RimPlas multianalyser.</RCP_RPMultiAnalyzer.jobString>
+
+
+</LanguageData>
