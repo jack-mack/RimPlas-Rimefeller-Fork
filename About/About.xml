@@ -18,10 +18,8 @@
   </modDependencies>
   <loadAfter>
     <li>brrainz.harmony</li>
-    <li>Mlie.CamouflageandStealth</li>
     <li>dninemfive.simpleconcrete</li>
     <li>trasheddt.industrialisation</li>
-    <li>Mlie.Insulation</li>
     <li>n7huntsman.defensesexpanded</li>
     <li>Mlie.Concrete</li>
     <li>Dubwise.Rimatomics</li>
