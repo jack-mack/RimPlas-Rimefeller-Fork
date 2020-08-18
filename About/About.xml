@@ -18,19 +18,6 @@
   </modDependencies>
   <loadAfter>
     <li>brrainz.harmony</li>
-    <li>dninemfive.simpleconcrete</li>
-    <li>trasheddt.industrialisation</li>
-    <li>n7huntsman.defensesexpanded</li>
-    <li>Mlie.Concrete</li>
-    <li>Dubwise.Rimatomics</li>
-    <li>Mlie.Proximity</li>
-    <li>VanillaExpanded.VFEMedical</li>
-    <li>LWM.DeepStorage</li>
-    <li>ratys.rtfuse</li>
-    <li>VanillaExpanded.VFEProduction</li>
-    <li>dismarzero.VGP.VGPVegetableGarden</li>
-    <li>Wemd.SimpleConcrete</li>
-    <li>CETeam.CombatExtended</li>
   </loadAfter>
   <description>Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2004190331
