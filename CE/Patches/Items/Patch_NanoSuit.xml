@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <!-- No mod - no patch - no error -->
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RPGrapheneNanoSuit"]/statBases/ArmorRating_Sharp</xpath>
+        <!-- Replace value and add new stats at the same time -->
+        <value>
+          <Bulk>3</Bulk>
+          <!-- Lightweight stuff -->
+          <WornBulk>1</WornBulk>
+          <!-- Very comfortable -->
+          <ArmorRating_Sharp>6</ArmorRating_Sharp>
+          <!-- Suit consists of 50% hyperweave, 40% graphene and 10% stuff. Basic sharp protection is slightly better than hyperweave flak jacket -->
+          <StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>
+          <!-- Stuff is just 10% of suit. Steel one would be slightly weaker than flak vest. Overall armor protects from non-AP rifle bullets, which is somewhat better than original protection, although still fine since hyperweave is very tough in CE -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RPGrapheneNanoSuit"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+          <ArmorRating_Blunt>15</ArmorRating_Blunt>
+          <!-- 50% of hyperweave and 40% of graphene. Protection is comparable to hyperweave parka, which kinda makes sense considering bulk and weight differences -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RPGrapheneNanoSuit"]/statBases/ArmorRating_Heat</xpath>
+        <value>
+          <ArmorRating_Heat>0.6</ArmorRating_Heat>
+          <!-- Moderately reduced base rating will help making it stuff-dependant, so full-graphene will protect better than steel-graphene. UPD: slightly buffed to reach 1 with best materials-->
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="RPGrapheneNanoSuit"]/equippedStatOffsets</xpath>
+        <value>
+          <CarryBulk>30</CarryBulk>
+          <!-- The same bulk bonus that the backpack gives. Compared to original OP bonuses looks bland, but I don't want to boost it any more -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RPGrapheneNanoSuit"]/equippedStatOffsets/MoveSpeed</xpath>
+        <value>
+          <MoveSpeed>0.2</MoveSpeed>
+          <!-- It was probably designed to counter armor speed penalties, but bruh, original +2 bonus is ridiculously OP and makes no sense -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RPGrapheneNanoSuit"]/equippedStatOffsets/ToxicSensitivity</xpath>
+        <value>
+          <ToxicSensitivity>-0.75<!-- ??? --></ToxicSensitivity>
+          <!-- original -1 makes no sense as well -->
+        </value>
+      </li>
+      <!-- I believe shielded one requires no patch, I'll test it later -->
+    </operations>
+  </Operation>
+</Patch>

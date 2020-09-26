@@ -18,6 +18,7 @@
   </modDependencies>
   <loadAfter>
     <li>brrainz.harmony</li>
+    <li>CETeam.CombatExtended</li>
   </loadAfter>
   <description>Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2004190331
@@ -29,6 +30,8 @@ https://invite.gg/mlie
 
 Non-steam version:
 https://github.com/emipa606/RimPlas
+
+- CE patch added, thank you Rovalen!
 	
 --- Original Description ---
 Overview

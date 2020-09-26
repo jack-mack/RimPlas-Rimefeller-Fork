@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- NOTE: heat protection values need extensive balancing. Line 242 for quick explanation -->
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <!-- No mod - no patch - no error. Comment it for debug -->
+    <operations>
+      <!-- =======Brick base patching======= -->
+      <li Class="PatchOperationRemove">
+        <!-- STOP USING BLOCKS AS WEAPON!!! YOU'LL RUIN SIDEARM CONFIGS!!! -->
+        <xpath>Defs/ThingDef[@Name="RimPlas_StoneBlocksBase"]/tools</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="RimPlas_StoneBlocksBase"]/statBases</xpath>
+        <value>
+          <Bulk>0.1</Bulk>
+          <!-- Slightly higher - since it's a bit heavier? idk -->
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="RimPlas_StoneBlocksBase"]/stuffProps/statFactors</xpath>
+        <value>
+          <Mass>1.2</Mass>
+          <!-- Kinda heavy -->
+          <MeleePenetrationFactor>0.9</MeleePenetrationFactor>
+          <!-- Slightly worse than steel, to be balanced (beware of OP clubs)-->
+        </value>
+      </li>
+      <!-- =======Asphalt======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_Asphalt"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>0.08</StuffPower_Armor_Sharp>
+          <!-- 1/13 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_Asphalt"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>0.83</StuffPower_Armor_Blunt>
+          <!-- 0.55 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_Asphalt"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat>
+          <!-- No isolation, as all stones should have -->
+        </value>
+      </li>
+      <!-- =======CarboFibre======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CarboFibre"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
+          <!-- 0.6 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CarboFibre"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>2.7</StuffPower_Armor_Blunt>
+          <!-- 1.8 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CarboFibre"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat>
+          <!-- 6.7 times cloth -->
+        </value>
+      </li>
+      <!-- =======CarboSynth======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CarboSynth"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>1.05</StuffPower_Armor_Sharp>
+          <!-- slightly better than steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CarboSynth"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>3.75</StuffPower_Armor_Blunt>
+          <!-- 2.5 times steel OP? It's better than plasteel-->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CarboSynth"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+          <!-- twice as fibre -->
+        </value>
+      </li>
+      <!-- =======Graphene======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlasGraphene"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>0.83</StuffPower_Armor_Sharp>
+          <!-- 0.83 steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlasGraphene"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>4.2</StuffPower_Armor_Blunt>
+          <!-- 2.8 times steel. OP? It's better than plasteel. UPD: it's expensive as heck, prob not OP-->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlasGraphene"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.365</StuffPower_Armor_Heat>
+          <!-- 8.3 times cloth -->
+        </value>
+      </li>
+      <!-- =======CarboPlasteel======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CarboPlasteel"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>1.05</StuffPower_Armor_Sharp>
+          <!-- same as carbosynth -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CarboPlasteel"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>4.05</StuffPower_Armor_Blunt>
+          <!-- slightly worse than graphene. Quite balanced since it's worse than regular plasteel in sharp armor and more expensive -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CarboPlasteel"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.317</StuffPower_Armor_Heat>
+          <!-- 7.2 times cloth -->
+        </value>
+      </li>
+      <!-- =======Rimoprene (leather)======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Leather_Rimoprene"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+          <!-- 0.95 steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Leather_Rimoprene"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+          <!-- 0.67 times steel NOTE: steel has better blunt protection modifier because it's metallic, and apparel made of metallic stuff usually has lower stuff effect multiplier, which makes them actually worse at blunt protection, as it should be -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Leather_Rimoprene"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.44</StuffPower_Armor_Heat>
+          <!-- 10 times cloth -->
+        </value>
+      </li>
+      <!-- =======RimPlas======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
+          <!-- 0.7 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>2.25</StuffPower_Armor_Blunt>
+          <!-- 1.5 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.172</StuffPower_Armor_Heat>
+          <!-- 3.9 times cloth. Not sure if it should actually have this value, will check later -->
+        </value>
+      </li>
+      <!-- =======RimPoly======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPoly"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+          <!-- 0.95 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPoly"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+          <!-- 1/3 steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPoly"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat>
+          <!-- 7 times cloth -->
+        </value>
+      </li>
+      <!-- =======RimRayon======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimRayon"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>0.67</StuffPower_Armor_Sharp>
+          <!-- 2/3 steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimRayon"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+          <!-- 0.4 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimRayon"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.073</StuffPower_Armor_Heat>
+          <!-- 1.67 times cloth -->
+        </value>
+      </li>
+      <!-- =======DevilSynth======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlasDevilSynth"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>1.6</StuffPower_Armor_Sharp>
+          <!-- 1.6 steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlasDevilSynth"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
+          <!-- 0.93 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlasDevilSynth"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.8</StuffPower_Armor_Heat>
+          <!-- 18 times cloth. Sounds OP? Hyperweave has 44 times more protection than cloth. NOTE: everything with more than 0.1 stuffpower_armor_heat makes totally heat-resistant parkas. NOTE 2 "Balancer's cry": hyperweave is the only vanilla cloth with more than 0.1 heat protection. Others go from 0.05 downwards -->
+        </value>
+      </li>
+      <!-- =======Plasteel Wool======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_Plasteel_Wool"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>1.67</StuffPower_Armor_Sharp>
+          <!-- 1.67 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_Plasteel_Wool"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>1.8</StuffPower_Armor_Blunt>
+          <!-- 1.2 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_Plasteel_Wool"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.418</StuffPower_Armor_Heat>
+          <!-- 9.5 times cloth -->
+        </value>
+      </li>
+      <!-- =======ElectroSteel Wool======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_ElectroSteel_Wool"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+          <!-- 0.95 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_ElectroSteel_Wool"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
+          <!-- 0.93 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_ElectroSteel_Wool"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.103</StuffPower_Armor_Heat>
+          <!-- 2+1/3 times cloth -->
+        </value>
+      </li>
+      <!-- =======Gold Wool======= -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_Gold_Wool"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+          <StuffPower_Armor_Sharp>0.78</StuffPower_Armor_Sharp>
+          <!-- 0.78 times steel. Too much for gold? No idea -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_Gold_Wool"]/statBases/StuffPower_Armor_Blunt</xpath>
+        <value>
+          <StuffPower_Armor_Blunt>1.26</StuffPower_Armor_Blunt>
+          <!-- 0.84 times steel -->
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RimPlas_Gold_Wool"]/statBases/StuffPower_Armor_Heat</xpath>
+        <value>
+          <StuffPower_Armor_Heat>0.092</StuffPower_Armor_Heat>
+          <!-- 2.1 times cloth -->
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
