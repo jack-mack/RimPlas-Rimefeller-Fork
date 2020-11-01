@@ -20,37 +20,39 @@
     <li>brrainz.harmony</li>
     <li>CETeam.CombatExtended</li>
   </loadAfter>
-  <description>Update of peladors mod
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2004190331
 
-[img]https://i.imgur.com/GYswkZ7.png[/img]
-
-Support-chat:
-https://invite.gg/mlie
-
-Non-steam version:
-https://github.com/emipa606/RimPlas
-
 - CE patch added, thank you Rovalen!
+
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/RimPlas][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
-Overview
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
+[h1]Overview[/h1] V1.1
 
 RimPlas is a synthetics mod, including plastics, addition synthetic textiles, injection moulding, carbon synthetics, graphene electrical buildings and some extra advanced synthetic items.
 
-Details
+[h1]Details[/h1]
 
 The following PDF document provides additional details of what the mod provides:
 
-RimPlas Notes
-https://1drv.ms/b/s!Au3GsmKyQkDYir5o5NeVaHADwS3CpQ?e=z9cqe1
+[url=https://1drv.ms/b/s!Au3GsmKyQkDYir5o5NeVaHADwS3CpQ?e=z9cqe1]RimPlas Notes[/url]
 
 
-Mod Notes:
+[h1]Mod Notes:[/h1]
 
 The two production buildings used for production are the additional injection moulding machines as well as the vanilla biofuel refinery.
 
-Multiple research projects in own research tabs and has a mod option to adjust the base project cost, some bulk recipes with slightly reduced overall work and resource use.
+Multiple research projects in own research tabs and has a mod option to adjust the base project cost, some bulk recipes with slightly reduced overall work and resource use. 
 
 Works with existing saves and compatibility should be good with other mods.
 
@@ -61,29 +63,28 @@ This mod has been developed with a balanced production process in mind for the s
 This mod provides supply methods for some of my other mods, though others do exist by other authors as preferred. You may however wish to consider the base resource needs of this and my other mods that require cloth and Chemfuel production as root supply needs.
 
 
-Compatibility Notes
-*** Subject to conversion ***
+[h1]Compatibility Notes[/h1] *** Subject to conversion ***
 
-VGP Garden: allows the use of ironwood and bamboo in addition to wood for the production of Pitch for carbon synthesis.
-D9 Simple Concrete - Uses concrete material for the production of Asphalt.
-Industrialisation: Uses concrete material for production of Asphalt, shifts recipe to concrete mixer. Carbon composites can additionally be made in the Electric Arc smelter.
-RF Concrete (Continued): Uses concrete material for the production of Asphalt.
-RT Fuse: Adds a carbon fibre and graphene circuit breaker.
-N7 Defences Expanded: Can use RimPlas in a recipe for making H-Barrier cells.
-Multiplayer - Native support (beta)
-Insulation - includes RimThermoPlas insulation structures.
-VFE - Production - additional cabinet use.
-WD Simple concrete - Use concrete blocks for the production of Asphalt.
+[b]VGP Garden[/b]: allows the use of ironwood and bamboo in addition to wood for the production of Pitch for carbon synthesis.
+[b]D9 Simple Concrete[/b] - Uses concrete material for the production of Asphalt.
+[b]Industrialisation[/b]: Uses concrete material for production of Asphalt, shifts recipe to concrete mixer. Carbon composites can additionally be made in the Electric Arc smelter.
+[b]RF Concrete (Continued)[/b]: Uses concrete material for the production of Asphalt.
+[b]RT Fuse[/b]: Adds a carbon fibre and graphene circuit breaker.
+[b]N7 Defences Expanded[/b]: Can use RimPlas in a recipe for making H-Barrier cells.
+[b]Multiplayer[/b] - Native support (beta)
+[b]Insulation[/b] - includes RimThermoPlas insulation structures.
+[b]VFE - Production[/b] - additional cabinet use.
+[b]WD Simple concrete[/b] - Use concrete blocks for the production of Asphalt.
 
-Rimefeller
+[h1]Rimefeller[/h1]
 
 I wish to recommend "Rimefeller" by Dub as an option to provide a reliable Chemfuel source, which is something I use myself. And am aware that some of the outputs from this mod overlap here. This can be considered as an alternative process where used together.
 
-Expansion Mod
+[h1]Expansion Mod[/h1]
 
 RimPlas Ghost Gear - Ultra Tech
 
-Credits:
+[h1]Credits:[/h1]
 
 Graphics Revision - Oleg Marko
 Partial Graphics Revision - Genom-X
@@ -96,6 +97,19 @@ Asphalt definitions modelled on "Industrialisation" Concrete. Applied for unifor
 Neurosis Security Door: Adapted from work by jabbamonkey with permission.
 
 Chinese (Simplified) translation - HawnHan
+
+[h1]Github[/h1]
+
+https://github.com/PeladorRW/RimPlas
+
+[h1]Pelador's Discord[/h1]
+
+https://discord.gg/CFNP26C
+
+[h1]V1.1 Collection[/h1]
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=2012817741
+
 
 (CC BY-NC-SA 4.0)</description>
 </ModMetaData>
