@@ -1,106 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Graphene conduit -->
-
   <RPGraphenePowerConduit.label>Graphene conduit</RPGraphenePowerConduit.label>
   <RPGraphenePowerConduit.description>A graphene cable for moving power around. Can be placed under walls and other buildings. Graphene cables are much more robust than regular power conduits.</RPGraphenePowerConduit.description>
   <RPGraphenePowerConduit_Blueprint.label>Graphene conduit (blueprint)</RPGraphenePowerConduit_Blueprint.label>
   <RPGraphenePowerConduit_Frame.label>Graphene conduit (building)</RPGraphenePowerConduit_Frame.label>
   <RPGraphenePowerConduit_Frame.description>A graphene cable for moving power around. Can be placed under walls and other buildings. Graphene cables are much more robust than regular power conduits.</RPGraphenePowerConduit_Frame.description>
-
-
   <!-- Underground Variant -->
-
   <RPUndGrapheneConduit.label>Underground Graphene conduit</RPUndGrapheneConduit.label>
   <RPUndGrapheneConduit.description>A graphene cable for moving power around. Can be placed under walls and other buildings. Graphene cables are much more robust than regular power conduits and this type can be buried under the surface.</RPUndGrapheneConduit.description>
   <RPUndGrapheneConduit_Blueprint.label>Underground Graphene conduit (blueprint)</RPUndGrapheneConduit_Blueprint.label>
   <RPUndGrapheneConduit_Frame.label>Underground Graphene conduit (building)</RPUndGrapheneConduit_Frame.label>
   <RPUndGrapheneConduit_Frame.description>A graphene cable for moving power around. Can be placed under walls and other buildings. Graphene cables are much more robust than regular power conduits and this type can be buried under the surface.</RPUndGrapheneConduit_Frame.description>
-
   <RPGraphenePowerConduit_Buried.label>Underground Graphene conduit</RPGraphenePowerConduit_Buried.label>
   <RPGraphenePowerConduit_Buried.description>A graphene cable for moving power around. Can be placed under walls and other buildings. Graphene cables are much more robust than regular power conduits and this type can be buried under the surface.</RPGraphenePowerConduit_Buried.description>
-
-
   <!-- Graphene Battery -->
-
   <RPGrapheneBattery.label>Graphene battery</RPGrapheneBattery.label>
   <RPGrapheneBattery.description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire. This Graphene battery is more efficient, can store more and is more robust.</RPGrapheneBattery.description>
-
-
   <!-- Small Graphene Battery -->
-
   <RPSmallGrapheneBattery.label>Small Graphene battery</RPSmallGrapheneBattery.label>
   <RPSmallGrapheneBattery.description>Stores electricity for later use. This smaller Graphene battery is more efficient than regular batteries and can be used out in the elements. It can store half the capacity of a normal sized Graphene Battery</RPSmallGrapheneBattery.description>
-
-
   <!-- Solar Generators -->
-
   <RPGrapheneSolarGenerator.label>Graphene Solar generator</RPGrapheneSolarGenerator.label>
   <RPGrapheneSolarGenerator.description>Produces electricity from sunlight. Does not work in the dark or under artificial light. More robust and produces slightly more power than a regular generator.</RPGrapheneSolarGenerator.description>
-
   <RPSmallGrapheneSolarGenerator.label>Graphene Small Solar generator</RPSmallGrapheneSolarGenerator.label>
   <RPSmallGrapheneSolarGenerator.description>A smaller variant of the normal Graphene solar generator, producing less power by equivalence but requiring less resources and space.</RPSmallGrapheneSolarGenerator.description>
-
-
   <!-- Portable Power unit -->
-
   <RPGraphenePortPower.label>Graphene Portable Power Unit</RPGraphenePortPower.label>
   <RPGraphenePortPower.description>A Graphene portable power generator.</RPGraphenePortPower.description>
-
-
   <!-- Grow Bin -->
-
   <RPGrapheneGrowBin.label>Graphene Hydroponics Bin</RPGrapheneGrowBin.label>
   <RPGrapheneGrowBin.description>A small hydroponics growing bin for efficiently growing singular plants. Requires a heat source.</RPGrapheneGrowBin.description>
-
-
   <!-- Heater and Cooler -->
-
   <RPGrapheneHeater.label>Graphene heater</RPGrapheneHeater.label>
   <RPGrapheneHeater.description>A Graphene device that efficiently converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature.</RPGrapheneHeater.description>
-
   <RPGrapheneCooler.label>Graphene Cooler</RPGrapheneCooler.label>
   <RPGrapheneCooler.description>A Graphene air-cooling machine that fits into a wall. Cool air comes out one side, while hot exhaust comes out the other. Can be used to efficinetly cool down rooms during summer, or to create a walk-in freezer.</RPGrapheneCooler.description>
-
-
   <!-- Regulator -->
-
   <RPGrapheneRegulator.label>Graphene Regulator</RPGrapheneRegulator.label>
   <RPGrapheneRegulator.description>A Graphene air-cooling and heating machine that fits into a wall. When cooling, cool air comes out one side, while hot exhaust comes out the other or hot air will heat the room. Can be used to efficinetly regulate the temperature of a room.</RPGrapheneRegulator.description>
-
-
   <!-- Intelligent Vent -->
-
   <RPGraphene_Vent.label>Graphene vent</RPGraphene_Vent.label>
   <RPGraphene_Vent.description>A vent for equalizing the temperature efficiently between two rooms without allowing people to walk between them. By default the graphene membrane in this vent's filter has an intelligent material design to dissallow air flow when either side of the vent is in a fixed range (10C - 30C), this property can be toggled on and off.</RPGraphene_Vent.description>
-
-
   <!-- RegenWalls -->
-
   <RPGrapheneRegenWall.label>Graphene Regenerating Wall</RPGrapheneRegenWall.label>
   <RPGrapheneRegenWall.description>An impassable wall. Capable of holding up a roof. This powered graphene version has self-repair properties.</RPGrapheneRegenWall.description>
   <RPGrapheneRegenWall_Blueprint.label>Graphene Regenerating Wall (blueprint)</RPGrapheneRegenWall_Blueprint.label>
   <RPGrapheneRegenWall_Frame.label>Graphene Regenerating Wall (building)</RPGrapheneRegenWall_Frame.label>
   <RPGrapheneRegenWall_Frame.description>An impassable wall. Capable of holding up a roof. This powered graphene version has self-repair properties.</RPGrapheneRegenWall_Frame.description>
-
-
   <!-- Geothermal -->
-
   <RPGrapheneGeoGenerator.label>Graphene geothermal generator</RPGrapheneGeoGenerator.label>
   <RPGrapheneGeoGenerator.description>Similar to the standard generator, but more compact, this produces electricity from geothermal steam geysers, but much more efficiently. Must be placed on a steam geyser.</RPGrapheneGeoGenerator.description>
-
-
   <!-- Wind Turbine -->
-
   <RPGrapheneWindTurbine.label>Graphene wind turbine</RPGrapheneWindTurbine.label>
   <RPGrapheneWindTurbine.description>A more compact and efficient wind-powered electrical generator. Requires clear space in front and behind for optimal air flow.</RPGrapheneWindTurbine.description>
-
-
   <!-- Electroliser -->
-
   <RPGrapheneElectroliser.label>Graphene Electroliser Generator</RPGrapheneElectroliser.label>
   <RPGrapheneElectroliser.description>Produces electricity from a body of water by converting it into hydrogen and oxygen and burning those resulting gases. Must be placed to collect a source of water and is more effective using running water sources.</RPGrapheneElectroliser.description>
-
-
 </LanguageData>

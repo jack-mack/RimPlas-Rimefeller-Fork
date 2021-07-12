@@ -1,18 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Rimica -->
-
   <BlocksRimica.label>Rimica blocks</BlocksRimica.label>
   <BlocksRimica.description>Blocks of Rimica composite laminate. A manufactured construction material that is heat resistant and has sterile properties.</BlocksRimica.description>
   <BlocksRimica.stuffProps.stuffAdjective>rimica</BlocksRimica.stuffProps.stuffAdjective>
-
-
   <!-- Fortified Rimica -->
-
   <BlocksFortRimica.label>Fortrimica blocks</BlocksFortRimica.label>
   <BlocksFortRimica.description>Blocks of fortified Rimica composite laminate. A manufactured construction material that is heat resistant. This particular synthetic has been fortified with the use of Plasteel.</BlocksFortRimica.description>
   <BlocksFortRimica.stuffProps.stuffAdjective>fortrimica</BlocksFortRimica.stuffProps.stuffAdjective>
-
-
 </LanguageData>

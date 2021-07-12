@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>RimPlas (Continued)</name>
   <packageId>Mlie.RimPlas</packageId>
@@ -7,6 +7,7 @@
   <supportedVersions>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -78,7 +79,7 @@ This mod provides supply methods for some of my other mods, though others do exi
 
 [h1]Rimefeller[/h1]
 
-I wish to recommend "Rimefeller" by Dub as an option to provide a reliable Chemfuel source, which is something I use myself. And am aware that some of the outputs from this mod overlap here. This can be considered as an alternative process where used together.
+I wish to recommend &quot;Rimefeller&quot; by Dub as an option to provide a reliable Chemfuel source, which is something I use myself. And am aware that some of the outputs from this mod overlap here. This can be considered as an alternative process where used together.
 
 [h1]Expansion Mod[/h1]
 
@@ -92,24 +93,24 @@ Other graphical contributions - Oskar Potocki (with permission).
 
 Small Shelf and Tiny Table by Proxyer. Original artwork: Small Shelf: CorePanda, Tiny Table: AlcoholV.
 
-Asphalt definitions modelled on "Industrialisation" Concrete. Applied for uniformity and consistency in material definitions. (Original Author(s): eatKenny, duduluu. Currently: TrashedDT.)
+Asphalt definitions modelled on &quot;Industrialisation&quot; Concrete. Applied for uniformity and consistency in material definitions. (Original Author(s): eatKenny, duduluu. Currently: TrashedDT.)
 
 Neurosis Security Door: Adapted from work by jabbamonkey with permission.
 
 Chinese (Simplified) translation - HawnHan
 
-[h1]Github[/h1]
-
-https://github.com/PeladorRW/RimPlas
-
-[h1]Pelador's Discord[/h1]
-
-https://discord.gg/CFNP26C
-
-[h1]V1.1 Collection[/h1]
-
-https://steamcommunity.com/sharedfiles/filedetails/?id=2012817741
+(CC BY-NC-SA 4.0)
 
 
-(CC BY-NC-SA 4.0)</description>
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+

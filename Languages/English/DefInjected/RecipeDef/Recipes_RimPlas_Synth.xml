@@ -1,91 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- RimRayon -->
-
   <MakeRimRayon.label>Make RimRayon</MakeRimRayon.label>
   <MakeRimRayon.description>Make RimRayon.</MakeRimRayon.description>
   <MakeRimRayon.jobString>Making RimRayon.</MakeRimRayon.jobString>
-
-
   <!-- Synthbase -->
-
   <MakeSynthbase.label>Make Synthbase</MakeSynthbase.label>
   <MakeSynthbase.description>Make synthbase.</MakeSynthbase.description>
   <MakeSynthbase.jobString>Making Synthbase.</MakeSynthbase.jobString>
-
-
   <!-- Synthread -->
-
   <RimPlasMakeSynthread.label>Make Synthread</RimPlasMakeSynthread.label>
   <RimPlasMakeSynthread.description>Make 25 Synthread.</RimPlasMakeSynthread.description>
   <RimPlasMakeSynthread.jobString>Making Synthread.</RimPlasMakeSynthread.jobString>
-
   <RimPlasBulkSynthread.label>Make Synthread in bulk</RimPlasBulkSynthread.label>
   <RimPlasBulkSynthread.description>Make 100 Synthread.</RimPlasBulkSynthread.description>
   <RimPlasBulkSynthread.jobString>Making Synthread.</RimPlasBulkSynthread.jobString>
-
-
   <!-- DevilSynth -->
-
   <RimPlasMakeDevilSynth.label>Make DevilSynth</RimPlasMakeDevilSynth.label>
   <RimPlasMakeDevilSynth.description>Make 25 DevilSynth.</RimPlasMakeDevilSynth.description>
   <RimPlasMakeDevilSynth.jobString>Making DevilSynth.</RimPlasMakeDevilSynth.jobString>
-
   <RimPlasBulkDevilSynth.label>Make DevilSynth in bulk</RimPlasBulkDevilSynth.label>
   <RimPlasBulkDevilSynth.description>Make 100 DevilSynth.</RimPlasBulkDevilSynth.description>
   <RimPlasBulkDevilSynth.jobString>Making DevilSynth.</RimPlasBulkDevilSynth.jobString>
-
-
   <!-- Plasteel -->
-
   <RimPlasMakePlasteel.label>Make Plasteel</RimPlasMakePlasteel.label>
   <RimPlasMakePlasteel.description>Make 25 Plasteel.</RimPlasMakePlasteel.description>
   <RimPlasMakePlasteel.jobString>Making Plasteel.</RimPlasMakePlasteel.jobString>
-
   <RimPlasBulkPlasteel.label>Make Plasteel in bulk</RimPlasBulkPlasteel.label>
   <RimPlasBulkPlasteel.description>Make 100 Plasteel.</RimPlasBulkPlasteel.description>
   <RimPlasBulkPlasteel.jobString>Making Plasteel.</RimPlasBulkPlasteel.jobString>
-
-
   <!-- Plasteel Wool -->
-
   <RimPlasMakePlasteelWool.label>Make Plasteel Wool</RimPlasMakePlasteelWool.label>
   <RimPlasMakePlasteelWool.description>Make 25 Plasteel Wool.</RimPlasMakePlasteelWool.description>
   <RimPlasMakePlasteelWool.jobString>Making Plasteel Wool.</RimPlasMakePlasteelWool.jobString>
-
   <RimPlasBulkPlasteelWool.label>Make Plasteel Wool in bulk</RimPlasBulkPlasteelWool.label>
   <RimPlasBulkPlasteelWool.description>Make 100 Plasteel Wool.</RimPlasBulkPlasteelWool.description>
   <RimPlasBulkPlasteelWool.jobString>Making Plasteel Wool.</RimPlasBulkPlasteelWool.jobString>
-
-
   <!-- ElectroSteel Wool -->
-
   <RimPlasMakeElectroSteelWool.label>Make ElectroSteel Wool</RimPlasMakeElectroSteelWool.label>
   <RimPlasMakeElectroSteelWool.description>Make 25 ElectroSteel Wool.</RimPlasMakeElectroSteelWool.description>
   <RimPlasMakeElectroSteelWool.jobString>Making ElectroSteel Wool.</RimPlasMakeElectroSteelWool.jobString>
-
   <RimPlasBulkElectroSteelWool.label>Make ElectroSteel Wool in bulk</RimPlasBulkElectroSteelWool.label>
   <RimPlasBulkElectroSteelWool.description>Make 100 ElectroSteel Wool.</RimPlasBulkElectroSteelWool.description>
   <RimPlasBulkElectroSteelWool.jobString>Making ElectroSteel Wool.</RimPlasBulkElectroSteelWool.jobString>
-
-
   <!-- Gold Wool -->
-
   <RimPlasMakeGoldWool.label>Make Gold Wool</RimPlasMakeGoldWool.label>
   <RimPlasMakeGoldWool.description>Make 25 Gold Wool.</RimPlasMakeGoldWool.description>
   <RimPlasMakeGoldWool.jobString>Making Gold Wool.</RimPlasMakeGoldWool.jobString>
-
   <RimPlasBulkGoldWool.label>Make Gold Wool in bulk</RimPlasBulkGoldWool.label>
   <RimPlasBulkGoldWool.description>Make 100 Gold Wool.</RimPlasBulkGoldWool.description>
   <RimPlasBulkGoldWool.jobString>Making Gold Wool.</RimPlasBulkGoldWool.jobString>
-
-
   <!-- Hyperweave -->
-
   <RimPlasMakeHyperweave.label>Make Hyperweave</RimPlasMakeHyperweave.label>
   <RimPlasMakeHyperweave.description>Make 25 Hyperweave.</RimPlasMakeHyperweave.description>
   <RimPlasMakeHyperweave.jobString>Making Hyperweave.</RimPlasMakeHyperweave.jobString>
-
-
 </LanguageData>

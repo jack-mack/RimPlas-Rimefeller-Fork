@@ -1,17 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <CraftRimPlasInjMld.label>Operate Injection Moulder</CraftRimPlasInjMld.label>
   <CraftRimPlasInjMld.verb>mould</CraftRimPlasInjMld.verb>
   <CraftRimPlasInjMld.gerund>operating</CraftRimPlasInjMld.gerund>
-
   <CraftRimPlasAdvInjMld.label>Operate Advanced Injection Moulder</CraftRimPlasAdvInjMld.label>
   <CraftRimPlasAdvInjMld.verb>mould</CraftRimPlasAdvInjMld.verb>
   <CraftRimPlasAdvInjMld.gerund>operating</CraftRimPlasAdvInjMld.gerund>
-
   <CraftRimPlasMechBreaker.label>Use Mech Breaker</CraftRimPlasMechBreaker.label>
   <CraftRimPlasMechBreaker.verb>break down</CraftRimPlasMechBreaker.verb>
   <CraftRimPlasMechBreaker.gerund>using</CraftRimPlasMechBreaker.gerund>
-
-
 </LanguageData>

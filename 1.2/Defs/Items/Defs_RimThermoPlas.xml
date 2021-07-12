@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- RimThermoPlas -->
+  <!-- ============ RimThermoPlas Foam ============================ -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>RimThermoPlas_Foam</defName>
+    <label>RimThermoPlas Foam</label>
+    <description>RimThermoPlas Foam. Synthetic material used in the construction of chemfuel exothermic reaction heating items.</description>
+    <graphicData>
+      <texPath>Things/Item/RimThermoPlas_Foam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>5.0</MarketValue>
+      <Mass>0.02</Mass>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>0.01</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <techLevel>Spacer</techLevel>
+  </ThingDef>
+  <!-- ============  RimThermoPlas Foam Recipe(s) ==================== -->
+  <RecipeDef>
+    <defName>RCP_RimThermoPlas_Foam</defName>
+    <label>Mould RimThermoPlas Foam</label>
+    <description>Mould 5 RimThermoPlas Foam.</description>
+    <workAmount>250</workAmount>
+    <jobString>Moulding a RimThermoPlas Item.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <workSkill>Crafting</workSkill>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthbase</li>
+        <li>RimPoly</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>RimPlas_InjMldMachine</li>
+    </recipeUsers>
+    <researchPrerequisite>RimThermoPlas</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthbase</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RimPoly</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <RimThermoPlas_Foam>5</RimThermoPlas_Foam>
+    </products>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>RCP_Bulk_RimThermoPlas_Foam</defName>
+    <label>Mould RimThermoPlas Foam in bulk</label>
+    <description>Mould 20 RimThermoPlas Foam.</description>
+    <workAmount>1000</workAmount>
+    <jobString>Moulding a RimThermoPlas Item.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <targetCountAdjustment>20</targetCountAdjustment>
+    <workSkill>Crafting</workSkill>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthbase</li>
+        <li>RimPoly</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>RimPlas_InjMldMachine</li>
+    </recipeUsers>
+    <researchPrerequisite>RimThermoPlas</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthbase</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RimPoly</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <RimThermoPlas_Foam>20</RimThermoPlas_Foam>
+    </products>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+</Defs>

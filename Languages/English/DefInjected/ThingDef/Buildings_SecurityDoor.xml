@@ -1,13 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Security Door -->
-
   <RPSecurityDoor.label>Neurosis Security Door</RPSecurityDoor.label>
   <RPSecurityDoor.description>Divides rooms. Powered operation allows people to move through the door without slowing down. This door has additional biometric sensors that can allow it to detect if a colonist is in an abnormal mental state and "intervene".</RPSecurityDoor.description>
   <RPSecurityDoor_Blueprint.label>Neurosis Security Door (blueprint)</RPSecurityDoor_Blueprint.label>
   <RPSecurityDoor_Frame.label>Neurosis Security Door (building)</RPSecurityDoor_Frame.label>
   <RPSecurityDoor_Frame.description>Divides rooms. Powered operation allows people to move through the door without slowing down. This door has additional biometric sensors that can allow it to detect if a colonist is in an abnormal mental state and "intervene".</RPSecurityDoor_Frame.description>
-
-
 </LanguageData>

@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- RimThermoPlas Foam -->
-
   <RimThermoPlas_Foam.label>RimThermoPlas Foam</RimThermoPlas_Foam.label>
   <RimThermoPlas_Foam.description>RimThermoPlas Foam. Synthetic material used in the construction of chemfuel exothermic reaction heating items.</RimThermoPlas_Foam.description>
-
-
 </LanguageData>

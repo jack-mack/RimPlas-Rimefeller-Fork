@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Research -->
-
   <RPThingMaker.label>Modular Fabricator</RPThingMaker.label>
   <RPThingMaker.description>Grants the ability to build the modular fabricator. An automated machine with 3d printing, laser etching and plasma cutting capabilities.</RPThingMaker.description>
-
-
 </LanguageData>

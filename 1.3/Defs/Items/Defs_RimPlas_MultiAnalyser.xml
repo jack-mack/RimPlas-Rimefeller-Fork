@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Rimplas Unfinished Multianalyser -->
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>RimPlas_UnfinishedMA</defName>
+    <label>Unfinished RimPlas Multianalyzer</label>
+    <statBases>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/RimPlas_UnfinishedMA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+  <!-- Rimplas MultiAnalyser Part -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>RimPlas_MAPart</defName>
+    <label>RimPlas Multianalyzer part</label>
+    <description>This is a housing part used to build a RimPlas version of the multianalyzer.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/RimPlas_MAPart</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>4</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>122</MarketValue>
+      <Mass>17</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <SellPriceFactor>0.20</SellPriceFactor>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  <!-- Injection Moulding of RimPlas MAPart -->
+  <RecipeDef>
+    <defName>RimPlasMouldRPMAPart</defName>
+    <jobString>Moulding RimPlas multianalyzer part.</jobString>
+    <label>Mould RimPlas multianalyzer part</label>
+    <description>Mould RimPlas multianalyzer part.</description>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthbase</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RimPlas</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <RimPlas_MAPart>1</RimPlas_MAPart>
+    </products>
+    <skillRequirements>
+      <Crafting>9</Crafting>
+    </skillRequirements>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Synthbase</li>
+        <li>RimPlas</li>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>RimPlas_InjMldMachine</li>
+    </recipeUsers>
+    <researchPrerequisite>RimPlas_MultiAnalyzer</researchPrerequisite>
+  </RecipeDef>
+  <!-- Combining RP MAParts and materials at machining table -->
+  <RecipeDef>
+    <defName>RCP_RPMultiAnalyzer</defName>
+    <label>Make RimPlas multianalyzer</label>
+    <description>Make a RimPlas multianalyser.</description>
+    <workAmount>12000</workAmount>
+    <jobString>Making a RimPlas multianalyser.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>RimPlas_UnfinishedMA</unfinishedThingDef>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <workSkill>Crafting</workSkill>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>RimPlas_MAPart</li>
+        <li>Gold</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <researchPrerequisite>RimPlas_MultiAnalyzer</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RimPlas_MAPart</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <products>
+      <MultiAnalyzer>1</MultiAnalyzer>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+</Defs>

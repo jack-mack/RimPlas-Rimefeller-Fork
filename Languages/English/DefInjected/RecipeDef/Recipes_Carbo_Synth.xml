@@ -1,47 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- CarboPitch -->
-
   <MakeCarboPitch.label>Make Pitch</MakeCarboPitch.label>
   <MakeCarboPitch.description>Make 100 Pitch</MakeCarboPitch.description>
   <MakeCarboPitch.jobString>Making Pitch</MakeCarboPitch.jobString>
-
-
   <!-- CarboFibre -->
-
   <RCP_CarboFibre.label>Mould Carbon Fibre</RCP_CarboFibre.label>
   <RCP_CarboFibre.description>Mould 100 Carbon Fibre</RCP_CarboFibre.description>
   <RCP_CarboFibre.jobString>Moulding carbon fibre.</RCP_CarboFibre.jobString>
-
-
   <!-- CarboSynth -->
-
   <RimPlasMakeCarboSynth.label>Mould CarboSynth</RimPlasMakeCarboSynth.label>
   <RimPlasMakeCarboSynth.description>Mould 25 CarboSynth</RimPlasMakeCarboSynth.description>
   <RimPlasMakeCarboSynth.jobString>Moulding CarboSynth</RimPlasMakeCarboSynth.jobString>
-
-
   <!-- Graphene -->
-
   <RCP_Graphene.label>Mould Graphene</RCP_Graphene.label>
   <RCP_Graphene.description>Mould 25 Graphene</RCP_Graphene.description>
   <RCP_Graphene.jobString>Moulding Graphene</RCP_Graphene.jobString>
-
   <RCP_BulkGraphene.label>Mould Graphene in bulk</RCP_BulkGraphene.label>
   <RCP_BulkGraphene.description>Mould 100 Graphene</RCP_BulkGraphene.description>
   <RCP_BulkGraphene.jobString>Moulding Graphene</RCP_BulkGraphene.jobString>
-
-
   <!-- CarboPlasteel -->
-
   <RCP_CarboPlasteel.label>Make CarboPlasteel</RCP_CarboPlasteel.label>
   <RCP_CarboPlasteel.description>Make 25 CarboPlasteel</RCP_CarboPlasteel.description>
   <RCP_CarboPlasteel.jobString>Making CarboPlasteel</RCP_CarboPlasteel.jobString>
-
   <RCP_BulkCarboPlasteel.label>Make CarboPlasteel in bulk</RCP_BulkCarboPlasteel.label>
   <RCP_BulkCarboPlasteel.description>Make 50 CarboPlasteel</RCP_BulkCarboPlasteel.description>
   <RCP_BulkCarboPlasteel.jobString>Making CarboPlasteel</RCP_BulkCarboPlasteel.jobString>
-
-
 </LanguageData>
