@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>RimPlas (Continued)</name>
   <packageId>Mlie.RimPlas</packageId>
@@ -21,13 +21,14 @@
     <li>brrainz.harmony</li>
     <li>CETeam.CombatExtended</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2004190331
 
 - CE patch added, thank you Rovalen!
+- For detailed description, download the [url=https://github.com/emipa606/RimPlas/raw/main/Source/RimPlasNotes.pdf]PDF[/url]
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
@@ -36,7 +37,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2004190331
 	[/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 [h1]Overview[/h1] V1.1
 
@@ -79,7 +80,7 @@ This mod provides supply methods for some of my other mods, though others do exi
 
 [h1]Rimefeller[/h1]
 
-I wish to recommend &quot;Rimefeller&quot; by Dub as an option to provide a reliable Chemfuel source, which is something I use myself. And am aware that some of the outputs from this mod overlap here. This can be considered as an alternative process where used together.
+I wish to recommend "Rimefeller" by Dub as an option to provide a reliable Chemfuel source, which is something I use myself. And am aware that some of the outputs from this mod overlap here. This can be considered as an alternative process where used together.
 
 [h1]Expansion Mod[/h1]
 
@@ -93,7 +94,7 @@ Other graphical contributions - Oskar Potocki (with permission).
 
 Small Shelf and Tiny Table by Proxyer. Original artwork: Small Shelf: CorePanda, Tiny Table: AlcoholV.
 
-Asphalt definitions modelled on &quot;Industrialisation&quot; Concrete. Applied for uniformity and consistency in material definitions. (Original Author(s): eatKenny, duduluu. Currently: TrashedDT.)
+Asphalt definitions modelled on "Industrialisation" Concrete. Applied for uniformity and consistency in material definitions. (Original Author(s): eatKenny, duduluu. Currently: TrashedDT.)
 
 Neurosis Security Door: Adapted from work by jabbamonkey with permission.
 
@@ -102,7 +103,7 @@ Chinese (Simplified) translation - HawnHan
 (CC BY-NC-SA 4.0)
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -113,4 +114,3 @@ Chinese (Simplified) translation - HawnHan
 [/list]
 </description>
 </ModMetaData>
-

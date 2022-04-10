@@ -1,25 +1,17 @@
 # RimPlas
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2004190331
 
 - CE patch added, thank you Rovalen!
+- For detailed description, download the https://github.com/emipa606/RimPlas/raw/main/Source/RimPlasNotes.pdf]PDF
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/RimPlas]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 # Overview
@@ -68,7 +60,7 @@ This mod provides supply methods for some of my other mods, though others do exi
 # Rimefeller
 
 
-I wish to recommend &quot;Rimefeller&quot; by Dub as an option to provide a reliable Chemfuel source, which is something I use myself. And am aware that some of the outputs from this mod overlap here. This can be considered as an alternative process where used together.
+I wish to recommend "Rimefeller" by Dub as an option to provide a reliable Chemfuel source, which is something I use myself. And am aware that some of the outputs from this mod overlap here. This can be considered as an alternative process where used together.
 
 # Expansion Mod
 
@@ -84,7 +76,7 @@ Other graphical contributions - Oskar Potocki (with permission).
 
 Small Shelf and Tiny Table by Proxyer. Original artwork: Small Shelf: CorePanda, Tiny Table: AlcoholV.
 
-Asphalt definitions modelled on &quot;Industrialisation&quot; Concrete. Applied for uniformity and consistency in material definitions. (Original Author(s): eatKenny, duduluu. Currently: TrashedDT.)
+Asphalt definitions modelled on "Industrialisation" Concrete. Applied for uniformity and consistency in material definitions. (Original Author(s): eatKenny, duduluu. Currently: TrashedDT.)
 
 Neurosis Security Door: Adapted from work by jabbamonkey with permission.
 
@@ -93,7 +85,7 @@ Chinese (Simplified) translation - HawnHan
 (CC BY-NC-SA 4.0)
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
