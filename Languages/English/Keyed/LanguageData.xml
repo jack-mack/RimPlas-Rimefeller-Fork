@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- Settings -->
+  <RimPlas.CurrentModVersion>Installed mod-version: {0}</RimPlas.CurrentModVersion>
   <RimPlas.Name>RimPlas</RimPlas.Name>
   <RimPlas.ResPct>Relative cost for research %:</RimPlas.ResPct>
   <RimPlas.ResTip>Note these changes will only take effect when RimWorld is restarted.</RimPlas.ResTip>

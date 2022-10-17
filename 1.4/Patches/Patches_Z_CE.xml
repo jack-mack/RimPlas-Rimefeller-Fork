@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RTPInsulatedWall"]</xpath>
+          <value>
+            <damageMultipliers Inherit="false">
+              <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>1.3</multiplier>
+              </li>
+              <li>
+                <damageDef>Thermobaric</damageDef>
+                <multiplier>1.7</multiplier>
+              </li>
+              <li>
+                <damageDef>Bullet</damageDef>
+                <multiplier>0.25</multiplier>
+              </li>
+              <li>
+                <damageDef>Fragment</damageDef>
+                <multiplier>0.125</multiplier>
+              </li>
+              <li>
+                <damageDef>Arrow</damageDef>
+                <multiplier>0.05</multiplier>
+              </li>
+              <li>
+                <damageDef>Electrical</damageDef>
+                <multiplier>0.20</multiplier>
+              </li>
+            </damageMultipliers>
+          </value>
+        </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="RTPInsulatedWall"]</xpath>
+          <value>
+            <damageMultipliers Inherit="false">
+              <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2.3</multiplier>
+              </li>
+            </damageMultipliers>
+          </value>
+        </li>
+      </operations>
+    </nomatch>
+  </Operation>
+</Patch>

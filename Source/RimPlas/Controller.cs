@@ -1,30 +1,28 @@
-﻿using UnityEngine;
+using Mlie;
+using UnityEngine;
 using Verse;
 
-namespace RimPlas
+namespace RimPlas;
+
+public class Controller : Mod
 {
-    // Token: 0x02000012 RID: 18
-    public class Controller : Mod
+    public static Settings Settings;
+    public static string currentVersion;
+
+    public Controller(ModContentPack content) : base(content)
     {
-        // Token: 0x04000022 RID: 34
-        public static Settings Settings;
+        Settings = GetSettings<Settings>();
+        currentVersion =
+            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.RimPlas"));
+    }
 
-        // Token: 0x06000043 RID: 67 RVA: 0x000034DA File Offset: 0x000016DA
-        public Controller(ModContentPack content) : base(content)
-        {
-            Settings = GetSettings<Settings>();
-        }
+    public override string SettingsCategory()
+    {
+        return "RimPlas.Name".Translate();
+    }
 
-        // Token: 0x06000041 RID: 65 RVA: 0x000034BC File Offset: 0x000016BC
-        public override string SettingsCategory()
-        {
-            return "RimPlas.Name".Translate();
-        }
-
-        // Token: 0x06000042 RID: 66 RVA: 0x000034CD File Offset: 0x000016CD
-        public override void DoSettingsWindowContents(Rect canvas)
-        {
-            Settings.DoWindowContents(canvas);
-        }
+    public override void DoSettingsWindowContents(Rect canvas)
+    {
+        Settings.DoWindowContents(canvas);
     }
 }

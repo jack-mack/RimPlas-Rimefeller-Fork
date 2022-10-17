@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ====== Compatability Patch ==================== -->
+  <!-- Asphalt -->
+  <!-- Change ingredients -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[WD] Simple Concrete</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="MakeAsphalt"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>WDBlocksConcrete</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="MakeAsphalt"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>WDBlocksConcrete</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="RP_CeilingLightBase" ParentName="LampBase">
+    <defName>RP_CeilingLight</defName>
+    <label>ceiling light</label>
+    <description>A ceiling light.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Lights/RP_CeilingLight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1.0,1.0,1.0,0.4)</color>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <fillPercent>0</fillPercent>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <clearBuildingArea>false</clearBuildingArea>
+    <tickerType>Rare</tickerType>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <selectable>true</selectable>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <statBases>
+      <WorkToBuild>200</WorkToBuild>
+      <Mass>3</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <!--   <overlightRadius>5.0</overlightRadius> -->
+        <glowRadius>10</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="RimPlas.CompProperties_CeilingLight" />
+    </comps>
+    <researchPrerequisites Inherit="false">
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>RimPlas.PlaceWorker_CeilingLight</li>
+    </placeWorkers>
+  </ThingDef>
+  <ThingDef ParentName="RP_CeilingLightBase">
+    <defName>RP_GrapheneCeilingLight</defName>
+    <label>graphene ceiling light</label>
+    <description>A ceiling light made using graphene. Much more effective and efficient.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Lights/RP_GrapheneCeilingLight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1.0,1.0,1.0,0.4)</color>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>250</WorkToBuild>
+      <Mass>2.5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList Inherit="false">
+      <Steel>5</Steel>
+      <RimPlasGraphene>5</RimPlasGraphene>
+    </costList>
+    <comps Inherit="false">
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <!--<overlightRadius>7.5</overlightRadius>-->
+        <glowRadius>15</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>10</basePowerConsumption>
+      </li>
+      <li Class="RimPlas.CompProperties_CeilingLight" />
+    </comps>
+    <researchPrerequisites Inherit="false">
+      <li>Electricity</li>
+      <li>RimPlas_Graphene</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>
