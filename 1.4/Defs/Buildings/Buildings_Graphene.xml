@@ -164,6 +164,7 @@
     <fillPercent>0.40</fillPercent>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <thingCategories>
       <li>BuildingsPower</li>
     </thingCategories>
@@ -225,6 +226,7 @@
     <fillPercent>0.40</fillPercent>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <thingCategories>
       <li>BuildingsPower</li>
     </thingCategories>
@@ -285,6 +287,7 @@
     <rotatable>false</rotatable>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <pathCost>70</pathCost>
     <fillPercent>0.5</fillPercent>
     <canOverlapZones>false</canOverlapZones>
@@ -399,6 +402,7 @@
     </thingCategories>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <pathCost>40</pathCost>
     <blockWind>false</blockWind>
     <rotatable>false</rotatable>
@@ -468,6 +472,7 @@
     </graphicData>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <passability>PassThroughOnly</passability>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <pathCost>35</pathCost>
     <fillPercent>0.35</fillPercent>
     <statBases>
@@ -536,6 +541,7 @@
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <pathCost>40</pathCost>
     <blockWind>true</blockWind>
     <rotatable>false</rotatable>
@@ -601,6 +607,7 @@
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <blockWind>true</blockWind>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
@@ -664,6 +671,7 @@
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <blockWind>true</blockWind>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>

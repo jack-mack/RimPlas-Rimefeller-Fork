@@ -1,5 +1,8 @@
 # Changelog for RimPlas
 
+1.4.2 - Fixed the drawer-types for batteries and some of the other powerstuff
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests.
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 

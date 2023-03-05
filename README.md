@@ -99,3 +99,4 @@ Chinese (Simplified) translation - HawnHan
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2194993727]Last updated 2023-03-05
