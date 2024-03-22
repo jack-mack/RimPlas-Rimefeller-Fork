@@ -10,9 +10,11 @@ namespace RimPlas;
 
 public class Building_RPThingMaker : Building
 {
-    public static string UITexPath = "Things/Building/Misc/RPThingMaker/UI/";
+    public static readonly string UITexPath = "Things/Building/Misc/RPThingMaker/UI/";
 
     [NoTranslate] private readonly string debugTexPath = UITexPath + "RPThingMakerDebug_Icon";
+
+    public readonly float effeciencyFactor = 0.95f;
 
     [NoTranslate] private readonly string EndLimitPath = "Limit_icon";
 
@@ -25,8 +27,6 @@ public class Building_RPThingMaker : Building
     private List<IntVec3> cachedAdjCellsCardinal;
 
     public bool debug;
-
-    public float effeciencyFactor = 0.95f;
 
     public bool isProducing;
 
@@ -208,7 +208,7 @@ public class Building_RPThingMaker : Building
         {
             if (i == 0)
             {
-                var unused = candidatesout[i];
+                _ = candidatesout[i];
             }
 
             if (numProducts <= 0)
@@ -248,7 +248,7 @@ public class Building_RPThingMaker : Building
                         remaining -= canPlace;
                     }
                 }
-                else if (!(thing is Building))
+                else if (thing is not Building)
                 {
                     blocked = true;
                 }
@@ -357,7 +357,7 @@ public class Building_RPThingMaker : Building
     public bool ValidateOutput(ThingDef t, out int hasSpace, out List<Building> candidatesOut)
     {
         hasSpace = 0;
-        candidatesOut = new List<Building>();
+        candidatesOut = [];
         var AdjCells = AdjCellsCardinalInBounds;
         if (AdjCells.Count > 0)
         {
@@ -510,7 +510,7 @@ public class Building_RPThingMaker : Building
                 "InnerRecipe List: Groups: " + RCPGroups.Count + " , Potentials: " + RCPListPotentials.Count);
         }
 
-        FinalList = new List<RCPItemCanUse>();
+        FinalList = [];
         var NotAllGroups = false;
         if (RCPGroups.Count > 0)
         {

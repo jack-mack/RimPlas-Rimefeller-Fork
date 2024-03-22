@@ -36,19 +36,19 @@ public class RPCompPowerPlantWind : CompPowerPlant
     private static readonly Material WindTurbineBladesMat =
         MaterialPool.MatFrom("Things/Building/Power/RPGrapheneWindTurbine/RPGrapheneWindTurbineBlades");
 
-    private readonly List<Thing> windPathBlockedByThings = new List<Thing>();
+    public readonly int updateWeatherEveryXTicks = 250;
 
-    private readonly List<IntVec3> windPathBlockedCells = new List<IntVec3>();
+    private readonly List<Thing> windPathBlockedByThings = [];
 
-    private readonly List<IntVec3> windPathCells = new List<IntVec3>();
+    private readonly List<IntVec3> windPathBlockedCells = [];
+
+    private readonly List<IntVec3> windPathCells = [];
 
     private float cachedPowerOutput;
 
     private float spinPosition;
 
     private int ticksSinceWeatherUpdate;
-
-    public int updateWeatherEveryXTicks = 250;
 
     protected override float DesiredPowerOutput => cachedPowerOutput;
 
@@ -81,7 +81,7 @@ public class RPCompPowerPlantWind : CompPowerPlant
         ticksSinceWeatherUpdate++;
         if (ticksSinceWeatherUpdate >= updateWeatherEveryXTicks)
         {
-            var num = Mathf.Min(parent.Map.windManager.WindSpeed, 1.5f);
+            var num = Mathf.Min(parent.Map.windManager.WindSpeed, MaxUsableWindIntensity);
             ticksSinceWeatherUpdate = 0;
             cachedPowerOutput = 0f - (Props.PowerConsumption * num);
             RecalculateBlockages();
@@ -163,11 +163,11 @@ public class RPCompPowerPlantWind : CompPowerPlant
 
         if (thing != null)
         {
-            stringBuilder.Append("WindTurbine_WindPathIsBlockedBy".Translate() + " " + thing.Label);
+            stringBuilder.Append(TranslateWindPathIsBlockedBy.Translate() + " " + thing.Label);
         }
         else
         {
-            stringBuilder.Append("WindTurbine_WindPathIsBlockedByRoof".Translate());
+            stringBuilder.Append(TranslateWindPathIsBlockedByRoof.Translate());
         }
 
         return stringBuilder.ToString();

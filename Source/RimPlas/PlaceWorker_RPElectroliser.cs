@@ -20,12 +20,7 @@ public class PlaceWorker_RPElectroliser : PlaceWorker
             }
         }
 
-        if (!WaterCellsPresent(loc, rot, map))
-        {
-            return false;
-        }
-
-        return true;
+        return WaterCellsPresent(loc, rot, map);
     }
 
     private bool WaterCellsPresent(IntVec3 loc, Rot4 rot, Map map)

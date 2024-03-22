@@ -19,7 +19,7 @@ public class PlaceWorker_RPThingMakerHopper : PlaceWorker
             var thingList = c.GetThingList(map);
             foreach (var thing in thingList)
             {
-                if (GenConstruct.BuiltDefOf(thing.def) is ThingDef { building: { }, defName: "RPThingMaker" } &&
+                if (GenConstruct.BuiltDefOf(thing.def) is ThingDef { building: not null, defName: "RPThingMaker" } &&
                     IsCorrectSide(thing, c, rot))
                 {
                     return true;

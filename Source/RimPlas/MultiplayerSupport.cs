@@ -26,11 +26,11 @@ internal static class MultiplayerSupport
         MP.RegisterSyncMethod(typeof(Building_RPThingMaker), "SetStockLimits");
         MP.RegisterSyncMethod(typeof(Building_RPThingMaker), "ToggleDebug");
         MethodInfo[] array =
-        {
+        [
             AccessTools.Method(typeof(Building_RPGrapheneBatterySmall), "Tick"),
             AccessTools.Method(typeof(Building_RPGrapheneBatterySmall), "PostApplyDamage"),
             AccessTools.Method(typeof(Globals), "DoSecSpecialEffects")
-        };
+        ];
         foreach (var methodInfo in array)
         {
             FixRNG(methodInfo);

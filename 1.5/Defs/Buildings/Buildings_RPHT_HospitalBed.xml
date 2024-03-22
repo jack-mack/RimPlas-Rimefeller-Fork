@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>RPHT_HospitalBed</defName>
+    <label>High-tech hospital bed</label>
+    <description>A specialised graphene bed designed for use in hospitals. Adjustable for a patient and includes built-in high tech equipment, it improves medical outcomes over normal hospital beds. It includes a neuro-receptor device that can modify alpha wave to dull pain and also provide some recreational stimulus.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/RPHT_HospitalBed/RPHT_HospitalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <castEdgeShadows>True</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0.5</Flammability>
+      <BedRestEffectiveness>1.25</BedRestEffectiveness>
+      <Comfort>0.95</Comfort>
+      <ImmunityGainSpeedFactor>1.25</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.25</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>1.25</SurgerySuccessChanceFactor>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="RimPlas.CompProperties_RPHospBed">
+        <PainCtrlHediff>HED_RPHospBed</PainCtrlHediff>
+        <PainCtrlSev>1.0</PainCtrlSev>
+        <PainCtrlTicks>120</PainCtrlTicks>
+        <RecPerHour>0.08</RecPerHour>
+      </li>
+    </comps>
+    <size>(1,2)</size>
+    <costList>
+      <RimPlasGraphene>55</RimPlasGraphene>
+      <Steel>25</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>20</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <designationHotKey>Misc5</designationHotKey>
+    <researchPrerequisites>
+      <li>HospitalBed</li>
+      <li>RimPlas_Graphene</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <techLevel>Spacer</techLevel>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  <HediffDef>
+    <defName>HED_RPHospBed</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>High-tech hospital bed</label>
+    <description>High-tech hospital bed pain control</description>
+    <defaultLabelColor>(0.35, 0.58, 0.93)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <lethalSeverity>-1.0</lethalSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-99.99</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painFactor>0.20</painFactor>
+        <painOffset>-0.05</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThoughtDef>
+    <defName>HED_RPHospBed_Thought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>HED_RPHospBed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>High-tech hospital bed</label>
+        <description>Feeling comfortable</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

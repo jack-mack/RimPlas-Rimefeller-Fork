@@ -14,7 +14,8 @@ public class RPThingMakerUtility
 
     public const string RCP_PWool = "RimPlas_Plasteel_Wool";
 
-    [NoTranslate] public static string ThingIconPath = "Things/Building/Misc/RPThingMaker/UI/RPThingMaker_ThingIcon";
+    [NoTranslate]
+    public static readonly string ThingIconPath = "Things/Building/Misc/RPThingMaker/UI/RPThingMaker_ThingIcon";
 
     public static Texture2D GetRPThingIcon(ThingDef t)
     {
@@ -114,17 +115,17 @@ public class RPThingMakerUtility
 
     public static List<string> GetMakeList()
     {
-        return new List<string>
-        {
+        return
+        [
             "ComponentIndustrial",
             "ComponentSpacer"
-        };
+        ];
     }
 
     public static List<int> GetMaxStock()
     {
-        return new List<int>
-        {
+        return
+        [
             25,
             50,
             75,
@@ -138,7 +139,7 @@ public class RPThingMakerUtility
             750,
             1000,
             0
-        };
+        ];
     }
 
     public static int StringToInt(string ToConvert)

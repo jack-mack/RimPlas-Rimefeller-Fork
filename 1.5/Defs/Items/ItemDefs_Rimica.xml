@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ===== Rimica ===== -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksRimica</defName>
+    <label>Rimica blocks</label>
+    <description>Blocks of Rimica composite laminate. A manufactured construction material that is heat resistant and has sterile properties.</description>
+    <graphicData>
+      <color>(181,243,255)</color>
+    </graphicData>
+    <statBases>
+      <Mass>0.75</Mass>
+      <Cleanliness>0.7</Cleanliness>
+      <MarketValue>11.7</MarketValue>
+    </statBases>
+    <stuffProps>
+      <color>(181,243,255)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>rimica</stuffAdjective>
+      <statFactors>
+        <Beauty>1.20</Beauty>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <WorkToBuild>5.0</WorkToBuild>
+        <Flammability>0</Flammability>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <BedRestEffectiveness>0.95</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.10</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <statOffsets>
+        <Beauty>1.2</Beauty>
+      </statOffsets>
+      <commonality>0</commonality>
+    </stuffProps>
+    <techLevel>Spacer</techLevel>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </ThingDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>RimicaTile</defName>
+    <label>Rimica tile</label>
+    <renderPrecedence>241</renderPrecedence>
+    <description>Composite laminate flooring tiles made from Rimica. They get a bonus to cleanliness.</description>
+    <texturePath>Terrain/Surfaces/RimicaFloorTile</texturePath>
+    <color>(0.71, 0.95, 1.00)</color>
+    <statBases>
+      <Beauty>3</Beauty>
+      <WorkToBuild>500</WorkToBuild>
+      <Cleanliness>0.7</Cleanliness>
+    </statBases>
+    <costList>
+      <BlocksRimica>5</BlocksRimica>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Rimica</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+  </TerrainDef>
+  <RecipeDef>
+    <defName>MakeRimicaBlocks</defName>
+    <label>Make Rimica Blocks</label>
+    <description>Make 25 Rimica blocks.</description>
+    <jobString>Making Rimica blocks.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>3500</workAmount>
+    <targetCountAdjustment>25</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>Chemfuel</li>
+        <li>Synthread</li>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BlocksRimica>25</BlocksRimica>
+    </products>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <researchPrerequisite>Rimica</researchPrerequisite>
+  </RecipeDef>
+  <!-- ======= Fortified Rimica ====== -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksFortRimica</defName>
+    <label>Fortrimica blocks</label>
+    <description>Blocks of fortified Rimica composite laminate. A manufactured construction material that is heat resistant. This particular synthetic has been fortified with the use of Plasteel.</description>
+    <graphicData>
+      <color>(75,80,135)</color>
+    </graphicData>
+    <statBases>
+      <Mass>0.85</Mass>
+      <MarketValue>17.6</MarketValue>
+      <!-- <Cleanliness>0.3</Cleanliness> -->
+    </statBases>
+    <stuffProps>
+      <color>(75,80,135)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>fortrimica</stuffAdjective>
+      <statFactors>
+        <Beauty>1.10</Beauty>
+        <MaxHitPoints>2.25</MaxHitPoints>
+        <WorkToBuild>7.0</WorkToBuild>
+        <Flammability>0</Flammability>
+        <DoorOpenSpeed>1.1</DoorOpenSpeed>
+        <BedRestEffectiveness>0.95</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.10</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <commonality>0</commonality>
+    </stuffProps>
+    <techLevel>Spacer</techLevel>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeFortRimicaBlocks</defName>
+    <label>Make Fortrimica Blocks</label>
+    <description>Make 25 Fortrimica blocks.</description>
+    <jobString>Making Fortrimica blocks.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>4000</workAmount>
+    <targetCountAdjustment>25</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+        <li>Synthread</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BlocksFortRimica>25</BlocksFortRimica>
+    </products>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Intellectual>9</Intellectual>
+    </skillRequirements>
+    <researchPrerequisite>FortRimica</researchPrerequisite>
+  </RecipeDef>
+</Defs>

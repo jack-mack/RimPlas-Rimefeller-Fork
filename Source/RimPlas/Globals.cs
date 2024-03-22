@@ -6,9 +6,9 @@ namespace RimPlas;
 
 internal static class Globals
 {
-    internal static string StunHed = "HED_RPSecStun";
+    internal static readonly string StunHed = "HED_RPSecStun";
 
-    internal static float StunSev = 1f;
+    internal static readonly float StunSev = 1f;
 
     internal static void HediffEffect(Pawn pawn, HediffDef stunHediffDef, float SeverityToApply)
     {

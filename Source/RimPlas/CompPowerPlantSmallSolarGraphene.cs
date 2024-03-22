@@ -20,7 +20,7 @@ public class CompPowerPlantSmallSolarGraphene : CompPowerPlant
         SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.15f, 0.15f, 0.15f));
 
     protected override float DesiredPowerOutput =>
-        Mathf.Lerp(0f, 750f, parent.Map.skyManager.CurSkyGlow) * RoofedPowerOutputFactor;
+        Mathf.Lerp(NightPower, FullSunPower, parent.Map.skyManager.CurSkyGlow) * RoofedPowerOutputFactor;
 
     private float RoofedPowerOutputFactor
     {
@@ -47,7 +47,7 @@ public class CompPowerPlantSmallSolarGraphene : CompPowerPlant
         var r = default(GenDraw.FillableBarRequest);
         r.center = parent.DrawPos + (Vector3.up * 0.1f);
         r.size = BarSize;
-        r.fillPercent = PowerOutput / 750f;
+        r.fillPercent = PowerOutput / FullSunPower;
         r.filledMat = PowerPlantSolarBarFilledMat;
         r.unfilledMat = PowerPlantSolarBarUnfilledMat;
         r.margin = 0.15f;

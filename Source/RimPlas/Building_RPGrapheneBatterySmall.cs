@@ -32,12 +32,12 @@ public class Building_RPGrapheneBatterySmall : Building
         Scribe_Values.Look(ref ticksToExplode, "ticksToExplode");
     }
 
-    public override void Draw()
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
         var comp = GetComp<CompPowerBattery>();
         var r = default(GenDraw.FillableBarRequest);
-        r.center = DrawPos + (Vector3.up * 0.1f);
+        r.center = drawLoc + (Vector3.up * 0.1f);
         r.size = BarSize;
         r.fillPercent = comp.StoredEnergy / comp.Props.storedEnergyMax;
         r.filledMat = BatteryBarFilledMat;
